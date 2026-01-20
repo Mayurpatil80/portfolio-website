@@ -442,7 +442,7 @@
         result.classList.remove('hidden', 'text-red-500', 'text-green-500');
 
         try {
-            const res = awaitfetch('/api/contact', {
+            const res = await fetch('/api/contact', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ name, email, message })
