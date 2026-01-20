@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur Patil | Java Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb', // Blue-600
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <nav class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm z-50 py-4 px-6 md:px-12 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-primary">MAYUR PATIL</h1>
+        <div class="flex items-center space-x-6">
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="#home" class="hover:text-primary transition">Home</a></li>
+                <li><a href="#skills" class="hover:text-primary transition">Skills</a></li>
+                <li><a href="#projects" class="hover:text-primary transition">Projects</a></li>
+                <li><a href="#education" class="hover:text-primary transition">Education</a></li>
+                <li><a href="#contact" class="hover:text-primary transition">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:ring-2 ring-primary transition">
+                <span id="theme-toggle-dark-icon" class="hidden text-xl">🌙</span>
+                <span id="theme-toggle-light-icon" class="text-xl">☀️</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm <span class="text-primary">Mayur Patil</span></h2>
+        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl">
+            Motivated Java Developer Fresher with hands-on experience in building real-world applications using Spring Boot, MySQL, and REST APIs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">View My Work</a>
+            <a href="Mayur_Resume(1).pdf" download class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-blue-50 dark:hover:bg-gray-800 transition">
+                <i class="fas fa-download mr-2"></i> Download Resume
+            </a>
+        </div>
+    </section> -->
+    <section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left px-6 pt-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 gap-10">
+    
+    <!-- Text Content -->
+    <div class="flex-1">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4">
+            Hi, I'm <span class="text-primary">Mayur Patil</span>
+        </h2>
+        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-xl">
+            Motivated Java Developer Fresher with hands-on experience in building real-world applications using Spring Boot, MySQL, and REST APIs.
+        </p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-4">
+            <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">
+                View My Work
+            </a>
+            <a href="Mayur_Resume(1).pdf" download class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-blue-50 dark:hover:bg-gray-800 transition">
+                <i class="fas fa-download mr-2"></i> Download Resume
+            </a>
+        </div>
+    </div>
+
+    <!-- Image -->
+    <div class="flex-1 flex justify-center md:justify-end">
+        <img src="firing-neurons.webp" alt="Mayur Patil" class="w-96 h-96 md:w-[480px] md:h-[480px] object-cover rounded-full border-[6px] border-primary shadow-2xl animate-float">
+    </div>
+</section>
+
+   <section id="skills" class="py-20 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-12 text-center underline decoration-primary underline-offset-8">
+            Technical Skills
+        </h3>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+
+            <!-- Java -->
+            <div class="skill-card">
+                <i class="fab fa-java text-orange-600"></i>
+                <p>Java</p>
+            </div>
+
+            <!-- Spring Boot -->
+            <div class="skill-card">
+                <i class="fas fa-leaf text-green-600"></i>
+                <p>Spring Boot</p>
+            </div>
+
+            <!-- Spring Security -->
+            <div class="skill-card">
+                <i class="fas fa-shield-alt text-red-500"></i>
+                <p>Spring Security</p>
+            </div>
+
+            <!-- Hibernate -->
+            <div class="skill-card">
+                <i class="fas fa-layer-group text-purple-500"></i>
+                <p>Hibernate (JPA)</p>
+            </div>
+
+            <!-- JDBC -->
+            <div class="skill-card">
+                <i class="fas fa-plug text-indigo-500"></i>
+                <p>JDBC</p>
+            </div>
+
+            <!-- REST APIs -->
+            <div class="skill-card">
+                <i class="fas fa-network-wired text-cyan-500"></i>
+                <p>REST APIs</p>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-card">
+                <i class="fab fa-html5 text-orange-500"></i>
+                <p>HTML5</p>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <i class="fab fa-css3-alt text-blue-500"></i>
+                <p>CSS3</p>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <i class="fab fa-js text-yellow-400"></i>
+                <p>JavaScript</p>
+            </div>
+
+            <!-- MySQL -->
+            <div class="skill-card">
+                <i class="fas fa-database text-blue-600"></i>
+                <p>MySQL</p>
+            </div>
+
+            <!-- PostgreSQL -->
+            <div class="skill-card">
+                <i class="fas fa-database text-indigo-600"></i>
+                <p>PostgreSQL</p>
+            </div>
+
+            <!-- MongoDB -->
+            <div class="skill-card">
+                <i class="fas fa-leaf text-green-700"></i>
+                <p>MongoDB</p>
+            </div>
+
+            <!-- Email Sender -->
+            <div class="skill-card">
+                <i class="fas fa-envelope text-pink-500"></i>
+                <p>Email Sender</p>
+            </div>
+
+            <!-- Kafka -->
+            <div class="skill-card">
+                <i class="fas fa-stream text-orange-400"></i>
+                <p>Apache Kafka</p>
+            </div>
+
+            <!-- GitHub -->
+            <div class="skill-card">
+                <i class="fab fa-github text-gray-800 dark:text-white"></i>
+                <p>GitHub</p>
+            </div>
+
+            <!-- Docker -->
+            <div class="skill-card">
+                <i class="fab fa-docker text-blue-400"></i>
+                <p>Docker</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
+    <div class="container mx-auto px-6">
+        <h1 class="text-3xl font-bold mb-12 text-center"> Projects</h1>
+
+        <div class="grid md:grid-cols-2 gap-10">
+
+            <!-- ATM System -->
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition">
+                <div class="p-8">
+
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold text-primary">ATM System</h4>
+                        <a href="" class="text-2xl hover:text-primary">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        A secure banking application that simulates real-world ATM operations
+                        including balance inquiry, cash withdrawal, fund transfer, and PIN-based
+                        authentication with transactional integrity.
+                    </p>
+
+                    <h5 class="font-semibold mb-3 text-gray-800 dark:text-gray-200">Tech Skills</h5>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Java</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Spring Boot</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Spring Data JPA</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Hibernate</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">MySQL</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">REST APIs</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Transaction Management</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Loan Approval System -->
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition">
+                <div class="p-8">
+
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold text-primary">Automated Loan Approval System</h4>
+                        <a href="https://github.com/Mayurpatil80/loan-approval-system" class="text-2xl hover:text-primary">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        A full-stack web application that automates loan eligibility checks
+                        using income, credit score, and risk rules, enabling faster approvals
+                        with reduced manual intervention.
+                    </p>
+
+                    <h5 class="font-semibold mb-3 text-gray-800 dark:text-gray-200">Tech Skills</h5>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">CSS3</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Spring Boot</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Hibernate (JPA)</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">REST APIs</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">MySQL</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Hotel Management System -->
+            <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition">
+                <div class="p-8">
+
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-2xl font-bold text-primary">Hotel Management System</h4>
+                        <a href="" class="text-2xl hover:text-primary">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <p class="text-gray-600 dark:text-gray-400 mb-6">
+                        A frontend-based hotel management system that manages room booking,
+                        customer data, and billing with dynamic pricing and a responsive UI.
+                    </p>
+
+                    <h5 class="font-semibold mb-3 text-gray-800 dark:text-gray-200">Tech Skills</h5>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">HTML5</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">CSS3</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">JavaScript</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">DOM Manipulation</span>
+                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Responsive Design</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Employee Management System -->
+          <div class="bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-xl border border-gray-100 dark:border-gray-700 hover:shadow-2xl transition">
+    <div class="p-8">
+
+        <div class="flex justify-between items-start mb-4">
+            <h4 class="text-2xl font-bold text-primary">Employee Management System (Full Stack)</h4>
+            <a href="https://github.com/Mayurpatil80/full-stack-employee-management-system" class="text-2xl hover:text-primary">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+        <p class="text-gray-600 dark:text-gray-400 mb-6">
+            A full-stack web application designed to manage employee records, departments,
+            roles, and payroll with secure authentication. Features RESTful APIs, role-based
+            access control, and seamless frontend–backend integration for efficient HR operations.
+        </p>
+
+        <h5 class="font-semibold mb-3 text-gray-800 dark:text-gray-200">Tech Stack</h5>
+        <div class="flex flex-wrap gap-2 mb-6">
+            <!-- Backend -->
+            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Java</span>
+            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Spring Boot</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Spring Data JPA</span>
+            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Hibernate</span>
+            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">Spring Security</span>
+
+            <!-- Database -->
+            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">MySQL</span>
+
+            <!-- Frontend -->
+            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">HTML</span>
+            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">CSS</span>
+            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">JavaScript</span>
+
+            <!-- Other -->
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">REST APIs</span>
+            <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm">CRUD Operations</span>
+        </div>
+
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+
+
+    <section id="education" class="py-20 bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-3xl font-bold mb-12 text-center">Education</h3>
+            <div class="space-y-8">
+                <div class="flex flex-col md:flex-row md:justify-between p-6 bg-gray-50 dark:bg-gray-800 rounded-xl shadow-sm border-l-4 border-primary">
+                    <div>
+                        <h4 class="text-xl font-bold">Bachelor of Computer Applications (BCA)</h4>
+                        <p class="text-gray-600 dark:text-gray-400">Pratap College Autonomous, Amalner</p>
+                    </div>
+                    <div class="mt-2 md:mt-0 md:text-right">
+                        <p class="font-bold text-primary">GPA: 8.57/10</p>
+                        <p class="font-bold text-primary">PERCENTAGE: 72%</p>
+                        <p class="text-sm italic">Completed May 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h3 class="text-3xl font-bold mb-8 text-center">Get In Touch</h3>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-lg mb-6">I am currently looking for new opportunities as a Java Developer. Feel free to reach out!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-primary text-xl"></i>
+                            <span>Mp6979884@gmail.com</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-primary text-xl"></i>
+                            <span>+91 8010037263</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-location-dot text-primary text-xl"></i>
+                            <span>Amalner, Maharashtra, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="space-y-4">
+                    <input type="text" id="user-name" placeholder="Full Name" required class="w-full p-3 rounded-lg border dark:bg-gray-900 dark:border-gray-700 focus:ring-2 ring-primary outline-none">
+                    <input type="email" id="user-email" placeholder="Email Address" required class="w-full p-3 rounded-lg border dark:bg-gray-900 dark:border-gray-700 focus:ring-2 ring-primary outline-none">
+                    <textarea id="user-message" rows="4" placeholder="Your Message" required class="w-full p-3 rounded-lg border dark:bg-gray-900 dark:border-gray-700 focus:ring-2 ring-primary outline-none"></textarea>
+                    <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+                    <p id="form-result" class="hidden text-center font-bold text-green-500 mt-2"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-1 bg-white dark:bg-gray-900 text-center border-t border-gray-100 dark:border-gray-800">
+        <div class="flex justify-center space-x-6 mb-6 text-2xl">
+            <a href="https://www.linkedin.com/in/mayur-patil-954ba4279/" class="hover:text-primary transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Mayurpatil80" class="hover:text-primary transition"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="text-gray-500">© 2026 Mayur Patil. All rights reserved.</p>
+    </footer>
+
+   <script>
+
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const darkIcon = document.getElementById('theme-toggle-dark-icon');
+    const lightIcon = document.getElementById('theme-toggle-light-icon');
+    const htmlElement = document.documentElement;
+
+    function updateIcons() {
+        if (htmlElement.classList.contains('dark')) {
+            darkIcon?.classList.add('hidden');
+            lightIcon?.classList.remove('hidden');
+        } else {
+            darkIcon?.classList.remove('hidden');
+            lightIcon?.classList.add('hidden');
+        }
+    }
+
+    if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!localStorage.getItem('color-theme') &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        htmlElement.classList.add('dark');
+    } else {
+        htmlElement.classList.remove('dark');
+    }
+    updateIcons();
+
+    themeToggleBtn?.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+        localStorage.setItem(
+            'color-theme',
+            htmlElement.classList.contains('dark') ? 'dark' : 'light'
+        );
+        updateIcons();
+    });
+
+    // CONTACT
+
+   const form = document.getElementById('contact-form');
+    const result = document.getElementById('form-result');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById('user-name').value;
+        const email = document.getElementById('user-email').value;
+        const message = document.getElementById('user-message').value;
+
+        result.textContent = "Sending...";
+        result.classList.remove('hidden', 'text-red-500', 'text-green-500');
+
+        try {
+            const res = awaitfetch('/api/contact', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ name, email, message })
+});
+
+            if (!res.ok) throw new Error('Failed to send');
+
+            result.textContent = `Thank you, ${name}! Your message was sent successfully.`;
+            result.classList.add('text-green-500');
+            form.reset();
+        } catch (err) {
+            console.error(err);
+            result.textContent = "Error sending message. Please try again.";
+            result.classList.add('text-red-500');
+        }
+
+        setTimeout(() => result.classList.add('hidden'), 5000);
+    });
+</script>
+
+</body>
+</html>
