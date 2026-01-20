@@ -37,7 +37,22 @@
             </button>
         </div>
     </nav>
+
+    <!-- <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <h2 class="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm <span class="text-primary">Mayur Patil</span></h2>
+        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl">
+            Motivated Java Developer Fresher with hands-on experience in building real-world applications using Spring Boot, MySQL, and REST APIs.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#projects" class="bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700 transition shadow-lg">View My Work</a>
+            <a href="Mayur_Resume(1).pdf" download class="border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-blue-50 dark:hover:bg-gray-800 transition">
+                <i class="fas fa-download mr-2"></i> Download Resume
+            </a>
+        </div>
+    </section> -->
+    <section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left px-6 pt-20 bg-gradient-to-b from-blue-50 to-white dark:from-gray-800 dark:to-gray-900 gap-10">
     
+    <!-- Text Content -->
     <div class="flex-1">
         <h2 class="text-5xl md:text-7xl font-extrabold mb-4">
             Hi, I'm <span class="text-primary">Mayur Patil</span>
@@ -54,7 +69,6 @@
             </a>
         </div>
     </div>
-
 
     <!-- Image -->
     <div class="flex-1 flex justify-center md:justify-end">
@@ -433,6 +447,7 @@
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ name, email, message })
 });
+
 
             if (!res.ok) throw new Error('Failed to send');
 
